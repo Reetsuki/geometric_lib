@@ -11,3 +11,6 @@ class testcircle(unittest.TestCase):
         radius = 3
         expect = 2 * math.pi * radius
         self.assertEqual(perimeter(3), expect)
+
+if __name__ == "__main__":
+    unittest.main()
