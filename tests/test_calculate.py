@@ -32,7 +32,7 @@ class testcalculate(unittest.TestCase):
         func = 'area'
         size = [8, 6, 5]
         p = (8 + 6 + 5) / 2
-        expect = sqrt(p * (p - 8) * (p - 6) * (p - 5))
+        expect = math.sqrt(p * (p - 8) * (p - 6) * (p - 5))
         self.assertEqual(calc(fig, func, size), expect)
     def test_calc_triangle_perimeter_valid(self):
         fig = 'triangle'
