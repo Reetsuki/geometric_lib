@@ -18,13 +18,13 @@ def calc(fig, func, size):
 	assert fig in figs
 	assert func in funcs
 	key = f'{fig}-{func}'
-        expected_args = sizes.get(key)
-        assert len(size) == expected_args
-        assert all(vars >= 0 for vars in size)
-        
-        if fig == 'triangle':
-            a, b, c = size
-            assert a + b > c and a + c > b and b + c > a
+	expected_args = sizes.get(key)
+	assert len(size) == expected_args
+	assert all(vars >= 0 for vars in size)
+	
+	if fig == 'triangle':
+	    a, b, c = size
+	    assert a + b > c and a + c > b and b + c > a
 	result = eval(f'{fig}.{func}(*{size})')
 	return result
 
@@ -32,7 +32,7 @@ if __name__ == "__main__":
 	func = ''
 	fig = ''
 	size = list()
-    
+	
 	while fig not in figs:
 		fig = input(f"Enter figure name, avaliable are {figs}:\n")
 	
@@ -43,6 +43,3 @@ if __name__ == "__main__":
 		size = list(map(int, input("Input figure sizes separated by space, 1 for circle and square, 3 for triangle\n").split(' ')))
 	
 	calc(fig, func, size)
-
-
-
