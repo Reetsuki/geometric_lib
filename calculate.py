@@ -17,7 +17,7 @@ sizes = {
 def calc(fig, func, size):
 	assert fig in figs
 	assert func in funcs
-        key = f'{fig}-{func}'
+	key = f'{fig}-{func}'
         expected_args = sizes.get(key)
         assert len(size) == expected_args
         assert all(vars >= 0 for vars in size)
