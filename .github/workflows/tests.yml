@@ -41,7 +41,7 @@ jobs:
 
       - name: Run tests
         run: |
-          python -m unittest discover tests/ "tests_*.py" -v
+          python -m unittest discover tests/ "test_*.py" -v
 
       - name: Check code style
         run: |
