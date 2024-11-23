@@ -12,4 +12,4 @@ class testtriangle(unittest.TestCase):
         a = 5
         b = 8
         c = 6
-        self.assertEqual(expect, perimeter(a, b, c), 19)
+        self.assertEqual(perimeter(a, b, c), 19)
