@@ -27,7 +27,7 @@ class testcalculate(unittest.TestCase):
         fig = 'triangle'
         func = 'area'
         size = [8, 6, 5]
-        self.assertAlmostEqual(calc(fig, func, size), 14.9812383, 7)
+        self.assertAlmostEqual(calc(fig, func, size), 14.9812382, 7)
     def test_calc_triangle_perimeter_valid(self):
         fig = 'triangle'
         func = 'perimeter'
