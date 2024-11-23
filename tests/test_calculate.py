@@ -22,7 +22,7 @@ class testcalculate(unittest.TestCase):
         fig = 'square'
         func = 'perimeter'
         size = [8]
-        self.assertEqual(calc(fig, func, size), expect, 32)
+        self.assertEqual(calc(fig, func, size), 32)
     def test_calc_triangle_area_valid(self):
         fig = 'triangle'
         func = 'area'
